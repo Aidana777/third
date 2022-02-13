@@ -13,9 +13,9 @@ const books = [
 ];
 for( let i=0;i<books.length;i++){
   const btnBook=document.createElement('button')
- btnBook.textContent=books.textContent
- const alemText=document.createTextNode('Click')
- btnBook.appendChild(alemText)
- document.body.appendChild(btnBook)
+ books[i]
+ console.log(books[i])
+ btnBook.onclick=()=>{
+   
+ }
 }
-btnBook.onclick=()=>{}
