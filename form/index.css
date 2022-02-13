@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  input,
+  button {
+    border: none;
+    background: none;
+    margin: 0;
+  }
+  
+  .form {
+    display: grid;
+    gap: 6px;
+    width: 200px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  
+  .form--register {
+    margin-bottom: 20px;
+  }
+  
+  .form input {
+    width: 100%;
+    border: 1px solid gray;
+    padding: 4px 10px;
+    border-radius: 100px;
+    background: white;
+  }
+  
+  .form button {
+    width: 100%;
+    border-radius: 100px;
+    background: midnightblue;
+    color: white;
+    padding: 6px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .form button:disabled {
+    background: #cccc;
+    color: #f9f9f9;
+    box-shadow: none;
+  }
+  
+  .message {
+    margin: 0;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 12px;
+    background: #f5f5f5;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 1s ease;
+  }
+  .message--success {
+    background: rgb(57, 110, 57);
+    transform: translateY(0);
+    color: white;
+    opacity: 1;
+  }
+  .message--error {
+    background: rgb(114, 47, 47);
+    transform: translateY(0);
+    color: white;
+    opacity: 1;
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    background: #000;
+  }
+  
