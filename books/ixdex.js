@@ -11,11 +11,17 @@ const books = [
   "Удовольствие от X",
   "Преступление и наказание"
 ];
-for( let i=0;i<books.length;i++){
-  const btnBook=document.createElement('button')
- books[i]
- console.log(books[i])
- btnBook.onclick=()=>{
-   
- }
+for (let i = 0; i < books.length; i++) {
+  const btnBook = document.createElement('button')
+  btnBook.textContent = books[i]
+  btnBook.classList.add("book")
+  booksTodo.append(btnBook)
+  btnBook.onclick = () => {
+    if (  booksDone.append(btnBook)) {
+      booksTodo.append(btnBook)
+    } else {
+      booksDone.append(btnBook)
+      btnBook.classList.add("done")
+    }
+  }
 }
