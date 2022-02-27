@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  section {
+    padding: 20px 20px 40px 20px;
+    border-bottom: 1px solid black;
+  }
+  
+  h2 {
+    margin: 0;
+    margin-bottom: 30px;
+    color: grey;
+  }
+  
+  .box {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    background: #bb3535;
+    opacity: 1;
+    border-radius: 0;
+    transform: scale(1);
+    will-change: transform, border-radius, opacity;
+    transition: transform 0.3s ease, border-radius 0.3s ease, opacity 0.5s ease;
+  }
+  .box-circle {
+    border-radius: 50%;
+  }
+  
+  .box-hide {
+    opacity: 0;
+  }
+  .box-small {
+    transform: scale(0.5);
+  }
+  
